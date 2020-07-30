@@ -278,8 +278,13 @@ static __init int sel_netif_init(void)
 	int i;
 
 // [ SEC_SELINUX_PORTING_COMMON
+<<<<<<< HEAD
 #ifdef CONFIG_ALWAYS_ENFORCE
     selinux_enabled = 1;
+=======
+#ifdef CONFIG_SECURITY_SELINUX_ALWAYS_ENFORCE
+	selinux_enabled = 1;
+>>>>>>> e78ed7185512 (selinux: togglable selinux status)
 #endif
 // ] SEC_SELINUX_PORTING_COMMON
 
